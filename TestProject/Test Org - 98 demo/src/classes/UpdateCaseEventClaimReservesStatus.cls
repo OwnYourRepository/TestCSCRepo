@@ -72,7 +72,7 @@ public class UpdateCaseEventClaimReservesStatus{
         system.debug('listClaimToUpdate::' + listClaimToUpdate);
             
          if(!listClaimToUpdate.isEmpty())  {
-         //Update related Reserves, Claims, Event and Case
+         //Update related Reserves, Claims, Event and Case //Event is not being used now
          
             For(Claim__c c : listClaimToUpdate){
                 c.Claim_Status__c = 'Closed';
