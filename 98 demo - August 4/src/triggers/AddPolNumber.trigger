@@ -1,5 +1,5 @@
 trigger AddPolNumber on Claim__c (before insert) {
-
+ // testing Jenkins CI
   if (Trigger.isInsert) 
   {
     if (Trigger.isBefore)
