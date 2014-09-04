@@ -11,7 +11,7 @@ trigger AddPolNumber on Claim__c (before insert) {
    Case oCase = [select Policy__c, Id from Case where Id=: c.Case__c ] ;
    system.debug('oCase ::'+ oCase );
    //c.Policy_Name__c=   ee.Policy__c; --> Sep 4, 2014
-   //c.Case__c=ee.Case__c;
+   //c.Case__c=ee.Case__c;  --> Sep 4, 2014
    c.Policy_Name__c=   oCase.Policy__c ;
    c.Case__c = oCase.Id ;
    system.debug('Updated Claim before Insert::' + c);
