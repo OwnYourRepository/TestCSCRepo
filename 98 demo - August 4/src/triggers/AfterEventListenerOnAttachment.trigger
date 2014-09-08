@@ -55,7 +55,7 @@ trigger AfterEventListenerOnAttachment on Attachment (after insert, after update
         update listCaseToUpdate ;
     }
     
-              
+    //Commented by Sudhir          
     /*
     for(Case oCase : listCase){
         list<String> listSupportingDoc = new list<String>() ;
