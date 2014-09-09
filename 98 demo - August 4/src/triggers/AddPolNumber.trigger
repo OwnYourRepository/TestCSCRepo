@@ -1,10 +1,5 @@
 trigger AddPolNumber on Claim__c (before insert) {
- // testing Jenkins CI -- Test
- //commented on Sep 5
-  //comment#2 on Sep 5
-  //comment#3 on Sep 5
-  //comment#4 on Sep 5
-  //comment#5 on Sep 5
+//commented on 9th September
   if (Trigger.isInsert) 
   {
     if (Trigger.isBefore)
